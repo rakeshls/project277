@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "author": "Niyati Singh",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-mega", "id": "mega", "top": 413.67, "left": -260.34, "attrs": {} },
+    { "type": "wokwi-tv", "id": "tv1", "top": -191.94, "left": -478.47, "attrs": {} },
+    { "type": "wokwi-ir-receiver", "id": "ir1", "top": 413.53, "left": -359.01, "attrs": {} },
+    { "type": "wokwi-ir-remote", "id": "remote1", "top": -140.62, "left": -644.7, "attrs": {} }
+  ],
+  "connections": [
+    [ "tv1:GND", "mega:GND.1", "black", [ "v17.24", "h-56.2" ] ],
+    [ "tv1:SYNC", "mega:11", "green", [ "v24.49", "h-16.12" ] ],
+    [ "tv1:IN", "mega:29", "orange", [ "v22.92", "h241.33", "v52.94" ] ],
+    [ "ir1:GND", "mega:GND.3", "black", [ "v113.93", "h244.55" ] ],
+    [ "ir1:VCC", "mega:5V", "red", [ "v123.21", "h211.76" ] ],
+    [ "ir1:DAT", "mega:2", "blue", [ "v18.05", "h39.78", "v-122.17", "h256.71" ] ]
+  ],
+  "dependencies": {}
+}
